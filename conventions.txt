@@ -81,23 +81,22 @@ npm run serve or npm run backend
 
 Название веток
 
-Если фича - feature/ERA-{jira task name}
+Если фича - feature/ERA-{jira task name}[some-message] (some-message - не менее 15 символов)
 
-Например: если вы делали фичу с таском “643” то называете ее
+Например: если вы делали фичу с таском “415” то называете ее
 
-feature/ERA-643
+feature/ERA-415-small-fix-smartans
+
+Если релиз - release/v3.15.0
 
 Если багфикс - bugfix/ERA-{jira bug number}
 
 Если хотфикс - hotfix/ERA-{jira bug number}
 
-Для коммитов: id task: message [ref: http://url-to-task-in-jira]
+Для коммитов: ERA-{id task}: message [ref: http://url-to-task-in-jira - добавляем по желанию]
 
-Пример:
-
-643: add smartans feature [ref: http://url-to-task-in-jira ]
+Примеры:
+  коммит: ERA-415: add hooks for check commit message [ref: http://url-to-task-in-jira - опционально]
+  ветка: feature/ERA-752-change-smartans-render
 
 После реализации фичи\багфикса вы делаете Merge Request. В гитверсе есть группа ревьюверов. Вешаете на человека к которому код наиболее релевантный.
-
-
-
